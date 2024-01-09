@@ -47,8 +47,50 @@
         </nav>
     </header>
 
-    <section>
-        <h2>En mantenimiento</h2>
+    <section class="contenido">
+        <div class="guia-contenido">
+            <h1>Guía para Reportar Errores en Sentry y Jira</h1>
+    
+            <h2>Paso 1. Ingresamos a la plataforma de Sentry:</h2>
+            <p><a href="https://cdgsentry.grupokonecta.local/organizations/konecta/projects/" target="_blank">https://cdgsentry.grupokonecta.local/organizations/konecta/projects/</a></p>
+    
+            <h2>Paso 2. Los proyectos a trabajar son:</h2>
+            <ul>
+                <li>jarvis_v2_backend - <a href="https://cdgsentry.grupokonecta.local/organizations/konecta/issues/?project=10" target="_blank">https://cdgsentry.grupokonecta.local/organizations/konecta/issues/?project=10</a></li>
+                <li>jarvis_v2_fronted - <a href="https://cdgsentry.grupokonecta.local/organizations/konecta/issues/?project=12" target="_blank">https://cdgsentry.grupokonecta.local/organizations/konecta/issues/?project=12</a></li>
+            </ul>
+    
+            <h2>Paso 3. Identificado el tipo de error.</h2>
+    
+            <h2>Paso 4. Una vez identificamos el error ingresamos en sobre el mismo y copiamos la URL.</h2>
+    
+            <h2>Paso 5. En el Drive hay un archivo nombrado "Errores Sentry" en el cual se reportará el enlace de los incidentes para ser identificados del área a la cuál pertenecen.</h2>
+    
+            <h2>Paso 6. Una vez identificado el responsable del desarrollo procedemos a crear el Jira.</h2>
+    
+            <h2>Paso 7. Estando en Jira:</h2>
+            <p><a href="https://pmo.konecta.cloud/secure/RapidBoard.jspa?rapidView=123&selectedIssue=JRVS-7897" target="_blank">https://pmo.konecta.cloud/secure/RapidBoard.jspa?rapidView=123&selectedIssue=JRVS-7897</a></p>
+            <p>Le damos en "Crear" con los siguientes atributos:</p>
+            <ul>
+                <li>Proyecto: Aplicación Jarvis (JRVS)</li>
+                <li>Tipo de Incidencia: Incidencia</li>
+            </ul>
+    
+            <p>En la pestaña nos ubicamos en Datos Generales:</p>
+            <ul>
+                <li>Subtipos Incidencia: Aplicación/Web</li>
+                <li>Componentes: TRAVERSAL</li>
+                <li>País: Colombia</li>
+                <li>Resumen: Sentry | id=> este lo encontramos en la URL de Sentry seguido de la palabra issues</li>
+                <li>Descripción: URL de Sentry</li>
+            </ul>
+    
+            <h2>Paso 8. Prioridad: Máxima</h2>
+    
+            <p>Nota: No se reporta JIRA hasta identificar el responsable.</p>
+    
+            <p><strong>IMPORTANTE*** Asignar al responsable tanto en JIRA como en Sentry.</strong></p>
+        </div>
     </section>
 
 </body>

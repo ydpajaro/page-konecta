@@ -23,7 +23,7 @@ body {
 
 a {
     text-decoration:none;
-    color: var(--color-blanco);
+    color: var(--color-gris-claro);
     font-weight: bold;
 }
 
@@ -263,6 +263,7 @@ header .icons span {
     border: none; 
     border-radius: 5px; 
     cursor: pointer;  
+    
   }
 
 .aceptar button:hover {
@@ -273,6 +274,28 @@ header .icons span {
     border: 1px solid var(--color-gris-claro);
     padding: 8px; 
     text-align: left; 
+}
+
+.guia-contenido {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.guia-contenido h1 {
+    color: #0066cc;
+}
+
+.guia-contenido h2 {
+    color: #009900;
+}
+
+.guia-contenido p {
+    margin-bottom: 10px;
+}
+
+.guia-contenido a {
+    color: black;
+    text-decoration: none;
 }
 
 footer {
